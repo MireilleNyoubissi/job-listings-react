@@ -5,12 +5,39 @@
 .all {
   background-color: #800080;
 }
+
+input {
+  display: block;
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFDAB9;
+}
+
+input:hover,
+input:active {
+  background-color: #FAEBD7;
+  border: 3px solid #FA8072;
+}
+
+input:focus {
+  outline: none;
+}
+
+.formStyle {
+  padding-top: 5rem;  
+}
+
 .card {
   flex-direction: row;
   align-items: center;
   width: 80%;
   margin: 2rem;
   background-color: pink;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-container {
@@ -30,6 +57,10 @@
   color: #191970;
 }
 
+#highlight {
+  border-left: 5px solid #FF4500;
+}
+
 ul {
   display: flex;
 }
@@ -45,6 +76,7 @@ span {
   color: #00008B;
   font-size: 1rem;
 }
+
 .newsStyle {
   background-color: #FAEBD7;
 }
@@ -63,11 +95,16 @@ span {
 }
 .list2 li {
   list-style: none;
-  background-color: rgb(255, 255, 0, 0.5);
+  background-color: #FAEBD7;
   color: DarkSlateBlue;
   padding: 0.2rem;
   border-radius: 8px;
   font-weight: 600;
+}
+
+.list2 li:hover {
+  background-color: #FF4500;
+  color: #FAEBD7;
 }
 
 .list2 {
@@ -76,4 +113,8 @@ span {
 
 .left {
   align-items: center;
+}
+
+.list1 li {
+  color: #2F4F4F;
 }

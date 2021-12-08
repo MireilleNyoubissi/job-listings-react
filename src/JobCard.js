@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 
 function JobCard(props){
+  const [highlight, setHighlight] = useState(false);
+
+  function highlightCard(index) {
+    if(highlight === index) {
+      setHighlight(false);
+    } else {
+      setHighlight(index);
+    }
+  }
     return (
       <div className="card-container">
         {props.data.map((jobProfile, index) => (
-          <div className="card">
+          <div onClick = {() => highlightCard(index)} className = "card" id = {highlight === index? "highlight": ""}>
             <img
               key={index + 0.5}
               src={jobProfile.logo}
