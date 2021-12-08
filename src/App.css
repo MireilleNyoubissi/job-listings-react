@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.all {
+  background-color: #800080;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card {
+  flex-direction: row;
   align-items: center;
+  width: 80%;
+  margin: 2rem;
+  background-color: pink;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card img {
+  width: 15%;
+  height: auto;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-title {
+  font-weight: bold;
+  color: #191970;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-left: 2rem;
+}
+span {
+  margin: 1rem;
+  border: none;
+  border-radius: 40px;
+  padding: 5px;
+  color: #00008B;
+  font-size: 1rem;
+}
+.newsStyle {
+  background-color: #FAEBD7;
+}
+.featuredStyle {
+  background-color: black;
+  color: #FAEBD7; 
+}
+
+.ul-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list1 li:first-child {
+  list-style: none;
+}
+.list2 li {
+  list-style: none;
+  background-color: rgb(255, 255, 0, 0.5);
+  color: DarkSlateBlue;
+  padding: 0.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.list2 {
+  display: flex;
+}
+
+.left {
+  align-items: center;
 }
